@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araras | Sobre o projeto</title>
+
+    <!-- Logo do projeto -->
+    <link rel="icon" href="./img/logo/favicon-araras.svg">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/fixos/menu.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/sobre.css">
+
+    <!-- Links internos -->
+    <script src="https://kit.fontawesome.com/68819aaeff.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <!-- Nav bar do site -->
+        <nav id="nav">
+            <!-- Logo -->
+            <div class="logo">
+              <a href="./index.html"><img src="./img/logo/favicon-araras128px.svg" alt="Logo de uma arara azul em forma de desenho, com os olhos fechados e sorrindo, cor roxo azulado e com somente a parte da cabeça amostra."></a>
+            </div>
+
+            <!-- Opção de aparecer o menu em tela menos de 999px -->
+            <div id="btn-mobile" class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
+            <!-- Links do menu -->
+            <div class="menu">
+                <ul class="testeteste">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./araras_sobre.html">Sobre o projeto</a></li>
+                    <li><a href="./php/araras_trabalhos.php">Trabalhos disponíveis</a></li>
+                    <li><a href="./php/araras_contato.php">Contato</a></li>
+                    <li><a href="./araras_index_emp.html">Araras para Empresas</a></li>
+                    <li><a href="./php/araras_login.php" class="menu_oculto">Entrar</a></li>
+                    <li><a href="#" class="menu_oculto">Trocar idioma</a></li>
+                </ul>
+            </div>
+ 
+            <!-- Botões de entrar e troca de idioma -->
+            <div class="botoes">
+                <ul>
+                    <li>
+                        <a href="./php/araras_login.php">
+                            <!-- <img src="./img/icones/icone_conta.png"  class="img_conta"> -->
+                            <i class="fa-solid fa-user"></i>
+                            <p>Entrar</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" >
+                            <!-- <img src="./img/icones/icone_tradutor_globo.png" class="img_idioma"> -->
+                            <i class="fa-solid fa-globe"></i>
+                            <p>Idioma</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <!-- Sessâo principal responsável pelo slide show -->
+            <section class="conteudo_principal">
+                
+                <div class="slide_show">
+                    <div class="slides_imagens">
+                        <img src="./img/banners/banner Araras2/1.png" id="img">
+                    </div>
+                    <div class="slides_imagens">
+                        <img src="./img/banners/banner Araras2/2.png">
+                    </div>
+                    <div class="slides_imagens">
+                        <img src="./img/banners/banner Araras2/3.png" >
+                    </div>
+                    <a class="anterior" onclick="plusSlides(-1)">❮</a>
+                    <a class="proximo" onclick="plusSlides(1)">❯</a>
+                </div>
+                <div class="seguimento_slides">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+
+            <!-- Sessão de pequenos cards contendo o link dos tópicos da página -->
+            <section class="sessao_cards_links_internos">
+                <div class="conteudo_cards">
+                    <div class="card">
+                        <button>
+                            <a href="#quem_somos">Quem somos?</a>
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button>
+                            <a href="#objetivo_projeto">Nosso objetivo</a>
+                        </button>
+                    </div>
+                    <div class="card">
+                        <button>
+                            <a href="#agradecimento_projeto">Agradecimentos</a>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sessão dos tópicos sobre o projeto e o grupo desenvolvedor -->
+            <section class="sessao_conteudo_projeto">
+
+                <!-- Sessão quem somos -->
+                <section class="sessao_quem_somos">
+                    <div class="lado_esquerdo">
+                        <div class="imagem_quem_somos">
+                            <img src="./img/svg/Creative team-cuate.svg" alt="">
+                            <!-- <a href="https://storyset.com/team">Team illustrations by Storyset</a> -->
+                        </div>
+                    </div>
+                    <div class="lado_direito">
+                        <div class="conteudo">
+                            <h2 id="quem_somos">Quem somos?</h2>
+                            <p>
+                                Somos um grupo de quatro estudantes formados na ETEC Antônio Devisate. Este projeto
+                                surgiu como um TCC e cresceu para algo maior ao passo em que vimos uma possibilidade
+                                muito maior de ajudar diversas pessoas e contribuir para a diversificação no ambiente laboral.
+                                Para nos conhecer melhor clique aqui.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sessão objetivo do projeto -->
+                <section class="sessao_objetivo">
+                    <div class="lado_esquerdo">
+                        <div class="conteudo">
+                            <h2 id="objetivo_projeto">Objetivo do projeto</h2>
+                            <p>
+                                Nosso maior objetivo é colaborar para a diminuição do preconceito na atual sociedade
+                                brasileira, por meio da inclusão no mercado de trabalho para pessoas migrantes, refugiadas ou
+                                em situações de risco em seus países de origem. Além disso, percebemos que colaboramos
+                                para fomentar a conscientização nas empresas de todo o Brasil.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="lado_direito">
+                        <div class="imagem_objetivo">
+                            <img src="./img/svg/Shared goals-cuate.svg">
+                            <!-- <a href="https://storyset.com/work">Work illustrations by Storyset</a> -->
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sessão agradescimentos -->
+                <section class="sessao_agradecimentos">
+                    <div class="conteudo">
+                        <h2 id="agradecimento_projeto">Agradecimentos</h2>
+                        <p>
+                            À todos os professores da escola técnica Antônio Devisate que nos auxiliaram e contribuíram para que este projeto saísse do papel e, principalmente, ao professor Marco Machado, nosso orientador, que nos mostrou um caminho para atingir uma sociedade melhor. Ademais, à escola por toda infraestrutura dada para que nossa plataforma pudesse ser construída da melhor maneira possível.
+                        </p>
+                    </div>
+                </section>
+
+            </section>
+        </div>
+    </main>
+     <!-- Parte referente ao rodape do site -->
+     <footer class="rodape">
+        <div class="rodape-1">
+            <h3 class="rodae-titulo">Páginas:</h3>
+            <!-- links das paginas -->
+            <ul class="rodape-links">
+                <li>
+                    <a href="./araras_sobre.html" class="rodape-link">Sobre o Projeto</a>
+                </li><br>
+                <li>
+                    <a href="./php/araras_trabalhos.php" class="rodape-link">Trabalhos disponiveis</a>
+                </li><br>
+                <li>
+                    <a href="./araras_index_emp.html" class="rodape-link">Araras para Empresas</a>
+                </li><br>
+            </ul>
+        </div>
+        <!-- contato -->
+        <div class="rodape-2">
+            <ul>
+                <li>
+                    <a href="https://criarmeulink.com.br/u/1668606312"><b>Telefone:</b> (14) 3433-5467</a>
+                </li>
+                <li>
+                    <a href="https://goo.gl/maps/xqctfFax79jJCeZw5"><b>Endereço:</b> Av. Castro Alves, 62 - Somenzari, Marília - SP</a>
+                </li>
+            </ul>
+        </div>
+        <!-- link redes sociais -->
+        <div class="rodape-3">
+            <h3 class="rodape-titulo" id="footer">Siga-nos em nossas redes sociais:</h3>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/giovana-oliveira-500954238/" id="linkedin"></a>
+                    <a href="https://www.instagram.com/_yogioliveira/" id="instagram"></a>
+                    <p> Giovana Oliveira </p>
+                </li>
+                <li>
+                    <a href="" id="linkedin"></a>
+                    <a href="https://www.instagram.com/joaovulgojao_/" id="instagram"></a>
+                    <p> João Victor </p>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/let%C3%ADcia-rodrigues-pimenta/" id="linkedin"></a>
+                    <a href="https://www.instagram.com/leticiarpimenta/" id="instagram"></a>
+                    <p> Letícia Pimenta </p> 
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/pedrooctavio27" id="linkedin"></a>
+                    <a href="https://www.instagram.com/quetavio/" id="instagram"></a>
+                    <p> Pedro Octávio </p> 
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Script referente a função responsiva da nav-bar -->
+    <script type="text/javascript" src="./js/fixos/mobile-navbar.js"></script>
+    <!-- Script referente a função de ação do slideshow -->
+    <script type="text/javascript" src="./js/banners.js"></script>
+    <!-- Script referente a função de ação do slideshow -->
+    <script type="text/javascript" src="./js/tela_sobre_projeto.js"></script>
+    <!-- Script referente ao link para a Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>

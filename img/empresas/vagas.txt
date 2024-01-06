@@ -1,0 +1,43 @@
+Crustulum:
+vaga1: Assistente Contábil
+- auxiliar na elaboração de balancetes e demonstrativos;
+- realizar a execução e controle de planilhas e relatórios de contabilidade;
+- fazer classificação de despesas;
+- registro de documentos;
+- revisar as movimentações bancárias.
+
+vaga2: Projetista de Produtos
+- criar desenhos de itens, ferramentas, equipamentos;
+- pensar em melhorias e modificações de produtos existentes;
+- acompanhar o ciclo de vida dos produtos, concorrência e tendências do mercado;
+- promover o alinhamento entre equipes de vendas, marketing e técnico sobre os produtos.
+
+
+Rekenaar:
+vaga1: Analista de Dados
+- Coleta e análise de dados para apoio a tomadas de decisão;
+- Elaboração de estratégias baseadas em mapeamento e controle de fluxos;
+- Cronometria;
+- Elaboração e acompanhamento de relatórios e KPIs da operação.
+
+vaga2: Técnico de Informática
+- Aplicar imagem nos equipamentos notebook, desktop, mobile e raspberry;
+- Realizar upgrade e downgrade de HD e memorias;
+- Realizar teste nos equipamentos caso apresente algum problema;
+- Limpeza e embalagem de equipamentos.
+
+
+Doctores:
+vaga1: Pediatra
+- Emergência pediátrica;
+- Enfermaria pediátrica;
+- CTI pediátrico.
+
+vaga2: Secretário(a)
+- Realizar o agendamento de exames pelo telefone, WhatsApp e presencial, informando preparos dos mesmos;
+- Realizar a impressão e entrega de exames;
+- Recepcionar o paciente, cadastrar e receber pagamentos quando não tem convênios;
+- Autorizar guias nos sistemas dos convênios.
+
+Fonte:https://www.vagas.com.br/
+Data:05/12/2022 às 10:40 

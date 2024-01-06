@@ -1,0 +1,545 @@
+/* Configurações padrões de nossas páginas */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  main{
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .container{
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  
+  /* Parte principal */
+  .conteudo_principal{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 5rem;
+  }
+  
+  .conteudo_principal .lado_esquerdo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 38em;
+  }
+  
+  .conteudo_principal .lado_esquerdo .texto_principal{
+    width: 100%;
+    height: 23em;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .conteudo_principal .lado_esquerdo .texto_principal h1{
+    font-size: 2.3em;
+    font-weight: 600;
+    margin: 1rem;
+  }
+  
+  .conteudo_principal .lado_esquerdo .area_botao{
+    width: 100%;
+    height: 12em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin: 10px 0 0 20px;
+  }
+  
+  .conteudo_principal .lado_esquerdo .area_botao button{
+    background: #4d57ef;
+    width: 20em;
+    height: 4em;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .conteudo_principal .lado_esquerdo .area_botao button:hover{
+    transform: scale(1.03);
+    transition:all 0.3s ease;
+    background: #5f6ae1;
+    cursor: pointer;
+  }
+  .conteudo_principal .lado_esquerdo .area_botao button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .conteudo_principal .lado_direito{
+    width: 50%;
+    height: 100%;
+  }
+  .conteudo_principal .lado_direito .imagem_principal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  .conteudo_principal .lado_direito .imagem_principal img{
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    -webkit-mask-image: linear-gradient(to right, transparent 0.8%, black 50%);
+  }
+  
+  /* Parte dos cards */
+  .sessao_cards{
+    width: 100%;
+    height: 12rem;
+    margin: 3rem 0;
+  }
+  
+  .sessao_cards .conteudos_cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .sessao_cards .conteudos_cards .card{
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    background: #4f58ee;
+    border-radius: 50%;
+    padding: 2rem 0;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .sessao_cards .conteudos_cards .card p{
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+  }
+  .sessao_cards .conteudos_cards .card .conteudo{
+    display: none;
+  }
+  .sessao_cards .conteudos_cards .card:hover{
+    width: 12em;
+    height: 12em;
+    transition:all 0.4s ease;
+    transform: scale(1.03);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .sessao_cards .conteudos_cards .card:hover > p{
+    display: none;
+  }
+  .sessao_cards .conteudos_cards .card:hover > .conteudo{
+    display: flex;
+    padding: 0.5em;
+    transition:all 0.4s ease;
+  }
+  
+  .sessao_cards .conteudos_cards .card .icone_card{
+    width: 100%;
+    height: 8em;
+    margin: 5px;
+  }
+  .sessao_cards .conteudos_cards .card .icone_card img{
+    width: 4.5em;
+  }
+  
+  .sessao_cards .conteudos_cards .card .texto_conteudo{
+    width: 100%;
+    height: 12em;
+    text-align: center;
+  }
+  
+  .sessao_cards .conteudos_cards .card .texto_conteudo p{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Parte das Vantagens */
+  .sessao_vantagens{
+    width: 100%;
+    height: 80rem;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  } 
+  
+  .sessao_vantagens h2{
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .sessao_vantagens h3{
+    font-size: 1.8em;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .sessao_vantagens_conteudos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sessao_vantagens_conteudos .linha{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .sessao_vantagens_conteudos .linha .lado_esquerdo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  
+  .sessao_vantagens_conteudos .linha img{
+    width: 25em;
+  }
+  
+  .sessao_vantagens_conteudos .linha .lado_direito{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+  
+  /* Parte do suporte à empresas */
+  .sessao_suporte{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em 0;
+  }
+  .sessao_suporte p {
+    color: #fff;
+  }
+  
+  .sessao_suporte .sessao_icones_suporte{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+  }
+  
+  .sessao_icones_suporte .card_suporte{
+    transition: all 0.3s ease-in-out;
+    width: 20%;
+    height: 16rem;
+    background:   #4f58ee;
+    border-radius: 20px;
+    padding: 2rem 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .sessao_icones_suporte .card_suporte:hover{
+    transform: scale(1.03);
+    transition:all 0.3s ease;
+     box-shadow: 10px 10px rgba(0, 0, 0, 0.15);
+  }
+  .sessao_icones_suporte .card_suporte .icone_card{
+    width: 100%;
+    height: 3em;
+    margin: 5px
+  }
+  .sessao_icones_suporte .card_suporte .conteudo p{
+    width: 100%;
+    height: 10em;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1330px){
+    /* Sessão cards */
+    .sessao_cards .card1{
+        width: 40%;
+    }
+    .sessao_cards .card2{
+        width: 40%;
+    }
+  }
+  
+  @media (max-width: 1250px){
+    /* Parte principal */
+    .conteudo_principal {
+      margin: 3.9rem 0 0;
+      height: 35rem;
+    }
+    .conteudo_principal .lado_direito{
+        width: 60%;
+        height: 550px;
+        margin: 0;
+    }
+    .conteudo_principal .lado_direito .imagem_principal img{
+        width: 100%;
+        height: 500px;
+    }
+    .conteudo_principal .lado_esquerdo .area_botao{
+        height: 5em;
+    }
+    
+  }
+  
+  @media (max-width: 1150px){
+    /* Parte principal */
+    .conteudo_principal .lado_direito{
+        height: 100%;
+    }
+    .conteudo_principal .lado_direito .imagem_principal img{
+        width: 100%;
+        height: 450px;
+    }
+    .conteudo_principal .lado_esquerdo .texto_principal h1::before{
+        width: 160px;
+    }
+  }
+  
+  @media (max-width: 999px){
+    /* Parte principal */
+    .container{
+        margin: 3.9rem 0 0;
+    }
+    .conteudo_principal .lado_esquerdo .texto_principal h1 {
+        font-size: 2em;
+    }
+    .conteudo_principal .lado_esquerdo {
+        align-items: center;
+        justify-content: center;
+        height: 25em;
+    }
+    .conteudo_principal .lado_esquerdo .area_botao{
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    /* Sessãp cards */
+    .sessao_cards{
+        height: 10rem;
+        margin: 0;
+    }
+    
+  }
+  
+  @media (max-width: 990px){
+    /* Sessão vantagens*/
+    .sessao_vantagens{
+        height: 60rem;
+    }
+    
+    .sessao_vantagens h2{
+        font-size: 2rem;
+    }
+    
+    .sessao_vantagens h3{
+        font-size: 20px;
+    }
+    .sessao_icones_suporte .conteudo_suporte ul li{
+        font-size: 16px;
+    }
+    .sessao_vantagens_conteudos .linha img{
+        width: 20em;
+    }
+  }
+  
+  
+  @media (max-width: 915px){
+    /* Parte principal */
+    .conteudo_principal .lado_esquerdo .texto_principal h1::before{
+        width: 110px;
+    }
+    /* Sessão suporte */
+    .sessao_icones_suporte .card_suporte{
+        height: 18rem;
+    }
+  
+  }
+  
+  
+  @media (max-width: 800px){
+    /* Parte principal */
+    .conteudo_principal{
+        height: 28em;
+    }
+    .conteudo_principal .lado_esquerdo{
+        width: 100%;
+        height: 100%;
+    }
+    .conteudo_principal .lado_esquerdo .texto_principal{
+        height: 15rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteudo_principal .lado_esquerdo .botao_espaco{
+        width: 100%;
+    }
+    .conteudo_principal .lado_direito{
+        display: none;
+    }
+    /* Sessão cards */
+    .sessao_cards{
+        margin: 0;
+        flex-direction: column;
+        height: 250px;
+    }
+    .sessao_cards .card1{
+        margin: 20px 0;
+        width: 80%;
+        height: 50%;
+    }
+    .sessao_cards .card1 .icone_card{
+        display: none;
+    }
+    
+    .sessao_cards .card1 p{
+        text-align: justify;
+        font-size: 12px;
+    }
+  
+    .sessao_cards .card2{
+        width: 80%;
+        height: 50%;
+    }
+    .sessao_cards .card2 .icone_card{
+        display: none;
+    }
+    
+    .sessao_cards .card2 p{
+        text-align: justify;
+        font-size: 12px;
+    }
+    /* Sessão vanatagens */
+    .sessao_vantagens{
+        margin: 20px 0;
+    }
+  
+  }
+  
+  @media (max-width: 750px){
+    /* Cards */
+    .sessao_cards{
+        height: 50rem;
+    }
+    .sessao_cards .conteudos_cards{
+        flex-direction: column;
+    }
+    /*Parte vantagens */
+    .sessao_vantagens{
+        height: 50rem;
+    }
+    .sessao_vantagens_conteudos .linha img{
+        width: 15em;
+    }
+    /* Sessão suporte */
+    .sessao_suporte .sessao_icones_suporte{
+        flex-direction: column;
+    }
+    .sessao_suporte{
+        height: 66rem;
+    }
+    .sessao_icones_suporte .card_suporte{
+        width: 20rem;
+        height: 15rem;
+        margin: 0.5rem 0;
+    }
+  
+    
+  }
+  
+  @media (max-width: 550px){
+    /*Parte vantagens */
+    .sessao_vantagens_conteudos .linha img{
+        width: 13em;
+    }
+    
+  }
+  
+  @media (max-width: 450px){
+    /*Parte vantagens */
+    .sessao_vantagens_conteudos .linha img{
+        display: none;
+    }
+    .sessao_vantagens_conteudos .linha .lado_esquerdo{
+        width: 100%;
+    }
+    .sessao_vantagens_conteudos .linha .lado_direito{
+        width: 100%;
+    }
+    .sessao_vantagens_conteudos .linha{
+        width: 100%;
+        height: 10rem;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    .sessao_vantagens_conteudos .linha:nth-child(even){
+        background: #4f58ee;
+        color: #fff;
+        border-radius: 20px;
+  
+    }
+    
+  }
+  @media (max-width: 390px){
+    /* Parte principal */
+    .conteudo_principal{
+      height: 30em;
+    }
+    .conteudo_principal .lado_esquerdo .texto_principal h1{
+      font-size: 1.8em;
+    }
+    
+    
+  }
+  @media (max-width: 350px){
+    /* Parte principal */
+    .conteudo_principal .lado_esquerdo .texto_principal h1{
+      font-size: 1.3em;
+    }
+    /* Parte suporte */
+    .sessao_icones_suporte .card_suporte{
+      width: 15rem;
+      height: 15rem;
+      margin: 0.5rem 0;
+    }
+  }
+  

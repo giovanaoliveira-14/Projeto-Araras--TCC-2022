@@ -1,0 +1,194 @@
+Configurações padrões de nossas páginas*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    margin: 20px;
+    
+}
+
+.container h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2D38B3;
+    margin: 1.2rem;
+    text-align: center;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Elementos e icones */
+.lado_esquerdo{
+    width: 30%;
+    margin: 10px;
+}
+
+.lado_esquerdo .elementos{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-elemento{
+    margin: 0.9em 0;
+}
+
+.elementos .campo-elemento{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementos .campo-elemento img{
+    width: 50px;
+}
+
+.lado_esquerdo h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+
+.lado_direito{
+    width: 70%;
+    margin: 10px;    
+}
+
+/* Formulário de contato */
+form{
+    margin: 20px;
+    
+}
+
+.form{
+    width: 90%;
+}
+
+.campo-input{
+    margin: 0.7em 0;
+    
+}
+
+.componentes .campo-input label{
+    font-size: 1em;
+    font-weight: 500;
+    color: #2e2e2e;
+    display: inline-block;
+}
+
+.componentes .campo-input input,select{
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    /* background-clip: padding-box; */
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.campo-input input[type="submit"] {
+    padding: 10px;
+    width: 15em;
+    height: 3em;
+    border: none;
+    /* outline: none; */
+    cursor: pointer;
+    border-radius: 10px;
+    background: #4f58ee;
+    font-size: 1rem;
+    color: #fff;
+    float: left;
+}
+.campo-input input[type="submit"]:hover {
+    background: #9298e4;
+}
+
+.campo-input textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+
+/* Parte responsiva */
+@media (max-width: 999px) {
+
+   main{
+    margin: 3.9rem 0 0;
+   }
+    
+}
+
+@media (max-width: 960px) {
+
+    .form{
+        width: 100%;
+        margin: 0;
+    }
+    
+}
+@media (max-width: 850px) {
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lado_esquerdo{
+        width: 100%;
+    }
+
+    .lado_esquerdo .elementos{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .lado_direito{
+        width: 100%;
+    }
+    .lado_direito::before{
+        display: none;
+    }
+
+    .campo-input input[type="submit"]{
+        width: 100%;
+    }
+
+}
+@media (max-width: 500px) {
+
+    .lado_esquerdo .elementos{
+       display: none;
+    }
+
+    .lado_esquerdo .elementos .campo-elemento img{
+        display:none;
+    }
+}

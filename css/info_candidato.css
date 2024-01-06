@@ -1,0 +1,205 @@
+/* Configurações padrões de nossas páginas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  main{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Container */
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Parte Principal */
+  .container .parte_principal{
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Imagem do candidato*/
+  .container .parte_principal .imagem_usuario {
+    margin: 2rem;
+    width: 13rem;
+    height: 13rem;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container .parte_principal .imagem_usuario img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  
+  /* Nome do candidato */
+  .container .parte_principal .nome_usuario{
+    margin: 1rem;
+  }
+  
+  .container .parte_principal .nome_usuario h1{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #2D38B3;
+    text-align: center;
+  }
+  
+  .container .parte_principal .nome_usuario p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #2D38B3;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  /* Dados amplos */
+  .container .dados_amplos{
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .container .dados_amplos ul{
+    margin: 1rem;
+  }
+  
+  .container .dados_amplos ul li{
+    margin: 1rem;
+    list-style: none;
+    font-size: 1.3em;
+  }
+  
+  /* Dados pessoais*/
+  
+  .container .dados_pessoais{
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    align-items: center;
+   
+  }
+  .container .dados_pessoais ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .container .dados_pessoais ul li{
+    margin: 3rem 1rem;
+    list-style: none;
+    font-size: 1.3em;
+  }
+  
+  /* Dados endereco */
+  .container .dados_endereco{
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .container .dados_endereco ul{
+    margin: 1rem;
+  }
+  .container .dados_endereco ul li{
+    margin: 1rem;
+    list-style: none;
+    font-size: 1.3em;
+  }
+  
+  /* Parte responsiva */
+  @media (max-width: 999px){
+    .container{
+        margin: 8rem 0 0 ;
+    }
+  }
+  @media (max-width: 950px){
+    .container .dados_amplos{
+     flex-direction: column;
+     height: 45rem;
+     text-align: left;
+    }
+    .container .dados_amplos ul{
+      width: 45rem;
+    }
+    .container .dados_pessoais{
+     align-items: flex-start;
+     justify-content: space-around;
+     height: 35rem;
+    }
+    .container .dados_pessoais ul{
+     flex-direction: column;
+     width: 45rem;
+     margin: 1rem;
+    }
+    .container .dados_endereco{
+      flex-direction: column;
+      height: 35rem;
+      text-align: left;
+    }
+    .container .dados_endereco ul{
+      width: 45rem;
+    }
+  }
+  @media (max-width: 750px){
+    .container .dados_amplos ul{
+      width: 30rem;
+    }
+    .container .dados_pessoais ul{
+     width: 35rem;
+    }
+    .container .dados_endereco ul{
+      width: 35rem;
+    }
+  }
+  @media (max-width: 580px){
+    .container .dados_amplos ul{
+      width: 30rem;
+    }
+    .container .dados_pessoais ul{
+     width: 30rem;
+    }
+    .container .dados_endereco ul{
+      width: 30rem;
+    }
+  }
+  @media (max-width: 480px){
+    .container .dados_amplos ul{
+      width: 25rem;
+    }
+    .container .dados_pessoais ul{
+     width: 25rem;
+    }
+    .container .dados_endereco ul{
+      width: 25rem;
+    }
+  }
+  @media (max-width: 480px){
+    .container .dados_amplos ul{
+      width: 100%;
+    }
+    .container .dados_pessoais ul{
+      width: 100%;
+    }
+    .container .dados_endereco ul{
+      width: 100%;
+    }
+  }

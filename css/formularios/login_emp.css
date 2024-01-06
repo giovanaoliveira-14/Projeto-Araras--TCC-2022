@@ -1,0 +1,389 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8a8bf8;
+  padding: 30px;
+  overflow-y: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 890px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .cover {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+  z-index: 5;
+}
+
+.container .cover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #8a8bf8;
+  opacity: 0.3;
+  z-index: 90;
+}
+
+.container .cover::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #8a8bf8;
+  opacity: 0.5;
+  z-index: 90;
+}
+
+.container .cover img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 12;
+  backface-visibility: hidden;
+}
+
+.container .cover .text {
+  position: absolute;
+  z-index: 100;
+  height: 100%;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover .text .text-1 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backface-visibility: hidden;
+}
+.cover .text .text-2 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.container .forms {
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+}
+
+.container .forms form {
+  width: 100%;
+}
+
+.forms .form-content .title {
+  position: relative;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+
+.forms .form-content .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 25px;
+  background: #4f58ee;
+}
+
+.forms .form-content .input-boxes {
+  margin-top: 30px;
+}
+
+.forms .form-content .input-box {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  margin: 10px 0;
+  position: relative;
+}
+
+.form-content .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0 30px;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid {
+  border-color: #4f58ee;
+}
+
+.form-content .input-box i {
+  position: absolute;
+  color: #4f58ee;
+  font-size: 17px;
+}
+
+.forms .form-content .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+
+.forms .form-content .text a {
+  text-decoration: none;
+  color: #4f58ee;
+}
+
+.forms .form-content .text a:hover {
+  text-decoration: underline;
+}
+
+.forms .form-content .button {
+  color: #fff;
+  margin-top: 40px;
+}
+
+.forms .form-content .button input {
+  color: #fff;
+  background: #4f58ee;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forms .form-content .button input:hover {
+  background: #3941ea;
+  transform: scale(1.03);
+    transition:all 0.3s ease;
+    cursor: pointer;
+}
+
+.forms .form-content .login-text {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.area_de_cima {
+    position: absolute;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  top: 2.8rem;
+}
+.area_de_cima .mensagem_erro {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #4f57eecf;
+  width: 20rem;
+  height: 4.5rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.area_de_cima .mensagem_erro:hover {
+  opacity: 0.9;
+}
+
+.area_de_cima .mensagem_erro h3{
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* Parte responsiva */
+@media screen and (max-width: 1380px) {
+    .area_de_cima {
+      top: 8px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .area_de_cima {
+      top: 10px;
+    }
+    .area_de_cima .mensagem_erro {
+      margin: 0;
+      height: 3rem;
+    }
+}
+@media screen and (max-width: 950px) {
+    .area_de_cima {
+      top: 0rem;
+    }
+    .area_de_cima .mensagem_erro {
+      margin: 3rem 0 0;
+      height: 5rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .area_de_cima {
+      top: 0rem;
+    }
+    .area_de_cima .mensagem_erro {
+      margin: 9rem 0 0;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .area_de_cima {
+        top: 1rem;
+    }
+        
+  .cover {
+    display: none;
+  }
+
+  .container {
+    height: 375px;
+    padding: 10px;
+    width: 70vw;
+  }
+
+  .container .form-content {
+    width: 60vw;
+  }
+
+  .container .forms {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .area_de_cima {
+    top: 0rem;
+  }
+  .area_de_cima .mensagem_erro {
+    margin: 3rem 0 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .cover {
+    display: none;
+  }
+
+  .container {
+    height: 375px;
+    padding: 10px;
+    width: 80vw;
+  }
+
+  .container .form-content {
+    width: 70vw;
+    height: 100vh;
+  }
+
+  .container .forms {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .cover {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .area_de_cima {
+    top: 3rem;
+  }
+  .container {
+    height: 29rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .area_de_cima {
+    top: 10px;
+  }
+  .area_de_cima .mensagem_erro {
+    margin: 0;
+    height: 3rem;
+  }
+  .cover {
+    display: none;
+  }
+
+  .container {
+    height: 29rem;
+    padding: 10px;
+    width: 100vw;
+  }
+
+  .container .form-content {
+    width: 70vw;
+    height: 100vh;
+  }
+
+  .container .forms {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+  }
+
+  .cover {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .area_de_cima {
+    top: 0rem;
+  }
+  .area_de_cima .mensagem_erro {
+    margin: 1rem 0 0;
+    width: 16rem;
+  }
+  .container {
+    height: 28rem;
+  }
+}
+
+
+ 

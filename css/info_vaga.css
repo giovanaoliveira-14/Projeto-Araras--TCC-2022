@@ -1,0 +1,210 @@
+/* Configurações padrões de nossas páginas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  main{
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Container */
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Parte Principal */
+  .container .parte_principal{
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* imagem da vaga */
+  .container .parte_principal .imagem_vaga{
+    margin: 2rem;
+    width: 13rem;
+    height: 13rem;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container .parte_principal .imagem_vaga img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* nome da vaga */
+  .container .parte_principal .nome_vaga{
+    margin: 1rem;
+  }
+  
+  .container .parte_principal .nome_vaga h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #8a8bf8;
+    text-align: center;
+  }
+  
+  /* tipo de contrato da vaga */
+  .container .parte_principal .contratacao p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8a8bf8;
+    text-align: center;
+  }
+  
+  /* parte informacoes */
+  .container .parte_informacoes{
+    width: 100%;
+    height: 25rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* lado esquerdo */
+  .container .parte_informacoes .lado_esquerdo{
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .parte_informacoes .lado_esquerdo ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  
+  }
+  
+  .container .parte_informacoes .lado_esquerdo ul li{
+    margin: 1rem;
+    gap: 1rem 1rem;
+    width: 15rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .parte_informacoes .lado_esquerdo ul li h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a8bf8;
+    text-align: center;
+  }
+  .container .parte_informacoes .lado_esquerdo ul li p{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  /* lado direito */
+  .container .parte_informacoes .lado_direito{
+    width: 50%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container .parte_informacoes .lado_direito ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+  
+  .container .parte_informacoes .lado_direito ul li{
+    margin: 1rem;
+    gap: 1rem 1rem;
+    width: 15rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .parte_informacoes .lado_direito ul li h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a8bf8;
+    text-align: center;
+  }
+  .container .parte_informacoes .lado_direito ul li p{
+    font-size: 1.3em;
+    text-align: center;
+  }
+  
+  /* parte sobre */
+  .container .parte_sobre{
+    width: 100%;
+    height: 40rem;
+    padding: 3rem;
+  }
+  /* sobre a vaga */
+  .container .parte_sobre .sobre_vaga{
+    width: 100%;
+    height: 20rem;
+  }
+  .container .parte_sobre .sobre_vaga h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a8bf8;
+  }
+  .container .parte_sobre .sobre_vaga p{
+    font-size: 1.3em;
+  }
+  
+  /* requisitos da vaga */
+  
+  .container .parte_sobre .requisitos{
+    width: 100%;
+    height: 15rem;
+  }
+  .container .parte_sobre .requisitos h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a8bf8;
+  }
+  .container .parte_sobre .requisitos p{
+    font-size: 1.3em;
+  }
+  
+  /* Parte responsiva */
+  @media (max-width: 999px){
+    .container{
+      margin: 10rem 0 0;
+    }
+  
+  }
+  @media (max-width: 750px){
+    .container .parte_informacoes{
+      display: flex;
+      flex-direction: column;
+      height: 45rem;
+    }
+  
+  }
+  @media (max-width: 650px){
+    .container .parte_sobre{
+      height: 60rem;
+    }
+    /* sobre a vaga */
+    .container .parte_sobre .sobre_vaga{
+      height: 30rem;
+    }
+    .container .parte_sobre .requisitos{
+      height: 30rem;
+    }
+  }
+  

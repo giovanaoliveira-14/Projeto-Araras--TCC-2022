@@ -1,0 +1,234 @@
+/* Configurações padrões de nossas páginas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  main{
+    width: 100%;
+    min-height: 80vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Container */
+  .container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Parte Principal */
+  .container .parte_principal{
+    width: 100%;
+    height: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Imagem da empresa */
+  .container .parte_principal .imagem_empresa {
+    margin: 2rem;
+    width: 13rem;
+    height: 13rem;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  .container .parte_principal .imagem_empresa img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Nome e ramo da empresa */
+  .container .parte_principal .nome_empresa{
+    margin: 1rem;
+  }
+  .container .parte_principal .nome_empresa h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #8a8bf8;
+    text-align: center;
+  }
+  .container .parte_principal .ramo_empresa h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8a8bf8;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  /* Parte sobre */
+  .container .parte_sobre{
+    width: 100%;
+    height: 25rem;
+    padding: 3rem;
+  }
+  
+  /* Sobre a empresa */
+  .container .parte_sobre .sobre_empresa{
+    width: 100%;
+    height: 13rem;
+  }
+  .container .parte_sobre .sobre_empresa h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a8bf8;
+  }
+  .container .parte_sobre .sobre_empresa p{
+    font-size: 1.3em;
+  }
+  
+  /* Valores da empresa */
+  
+  .container .parte_sobre .valores_empresa{
+    width: 100%;
+    height: 12rem;
+  }
+  
+  .container .parte_sobre .valores_empresa p {
+    font-size: 1.3em;
+  }
+  
+  /* Parte contato */
+  .container .parte_contato{
+    width: 100%;
+    height: 15rem;
+    padding: 3rem;
+    justify-content: flex-end;
+  }
+  
+  .container .parte_contato h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #8a8bf8;
+  }
+  
+  .container .parte_contato ul {
+   display: flex;
+   list-style: none;
+   gap: 3rem 3rem;
+   margin: 0 5rem 0 0;
+   justify-content: space-around;
+   flex-wrap: wrap;
+  }
+  
+  .container .parte_contato ul li {
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem 1rem;
+    width: 15rem;
+    height: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container .parte_contato ul li:hover {
+    background: #4f58ee;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .container .parte_contato ul li p:hover {
+    color: #fff;
+  }
+  
+  .container .parte_contato ul li a:hover {
+    color: #fff;
+  }
+  
+  .container .parte_contato ul li i:hover {
+    color: #fff;
+  }
+  
+  .container .parte_contato ul li p{
+    font-size: 1rem;
+  }
+  
+  .container .parte_contato ul li a{
+    font-size: 1rem;
+    text-decoration:none
+  }
+  
+  
+  /* Parte responsive */
+  @media screen and (max-width: 1400px){
+    .container .parte_sobre{
+        height: 50rem;
+    }
+    .container .parte_contato{
+        width: 100%;
+        height: 20rem;
+    }
+    .container .parte_contato ul li a{
+        color: #000;
+    }   
+  }
+  
+  @media screen and (max-width: 999px){
+    .container{
+        margin: 8rem 0 0;
+    }
+    
+    .container .parte_sobre{
+        height: 60rem;
+    }
+    .container .parte_contato{
+        width: 100%;
+        height: 20rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 780px){
+    .container .parte_sobre{
+        height: 60rem;
+    }
+    .container .parte_contato{
+        width: 100%;
+        height: 20rem;
+    }
+    .container .parte_contato ul {
+        gap: 0;
+        margin: 0;
+        justify-content: center;
+     }     
+  }
+  
+  @media screen and (max-width: 500px){
+    .container .parte_sobre{
+        height: 60rem;
+    }
+    .container .parte_contato{
+        width: 100%;
+        height: 20rem;
+    }
+    
+  }
+  
+  @media screen and (max-width: 480px){
+    .container .parte_principal .imagem_empresa {
+        width: 10rem;
+        height: 10rem;
+        border: 0;
+    }
+    .container .parte_sobre{
+        height: 80rem;
+    }
+    .container .parte_contato{
+        width: 100%;
+        height: 22rem;
+        padding: 0;
+    }   
+  
+  }

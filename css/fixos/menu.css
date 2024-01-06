@@ -1,0 +1,238 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* --------------------------- Navbar --------------------------- */
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  background-color: #8a8bf8;
+}
+
+/* Logo */
+.logo img {
+  width: 70px;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Links do menu */
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 32px;
+  display: flex;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Esses link só irão aparecer no menu encolhido */
+.menu_oculto {
+  display: none;
+}
+
+.menu ul li a:hover {
+  color: #2d38b3;
+}
+
+/* Botões de entrar e trocar de idioma */
+.botoes {
+  height: 100%;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.botoes li {
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes ul li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.botoes ul li a p:hover {
+  color: #2d38b3;
+}
+
+.botoes ul li a i:hover {
+  color: #2d38b3;
+}
+
+.botoes ul li a p {
+  color: #000;
+}
+
+.botoes ul li a i {
+  color: #000;
+}
+
+/* Icone do menu encolhido */
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: black;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+/* Quando a tela estiver com resolução de no máximo 999px, a tela irá se adptar, porém é necessário trabalhar com outras medidas de resolução, só essa não dá */
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    z-index: 1000;
+    top: 0;
+    position: fixed;
+    justify-content: space-around;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-color: #8a8bf8;
+  }
+
+  .menu {
+    position: fixed;
+    top: 9vh;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-110%);
+    background-color: #8a8bf8;
+    transition: transform 0.5s ease-in;
+  }
+
+  .testeteste {
+    margin-bottom: 20vh;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu li {
+    margin-left: 0;
+    margin: 20px 0px;
+    opacity: 0;
+  }
+
+  a {
+    opacity: 1;
+    font-size: 1.5em;
+    color: #000;
+  }
+  a:hover{
+    color: #2d38b3;
+  }
+
+  .menu_oculto {
+    display: flex;
+  }
+
+  .botoes {
+    display: none;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .menu.active {
+    transform: translateX(0);
+  }
+
+  .espaco {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* Como os links do menu irão aparecer */
+
+@keyframes menuLinksFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Quando o icone do menu estiver ativo, o icone irá se transformar em um X */
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+@media(max-width: 375px){
+    .testeteste li a{
+      font-size: 1.2em;
+    } 
+}
